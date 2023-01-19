@@ -2,11 +2,12 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
+description: Course materils
 nav: true
 nav_order: 5
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+In the fall I served as a 50% Lecturer for 2.151: Advanced System Dynamics and Control. I hope to share some of the teaching materials on this page in the not so distant future. 
 
-Organize your courses by years, topics, or universities, however you like!
+In addition, I took part in the Kaufman Teaching Certificate Program run by the MIT Teaching + Learning Lab. This was eye opening. Topics which were especially interesting to me included teaching in an inclusive way, strategies for maintain students attention, and developing effective assessments.
+
