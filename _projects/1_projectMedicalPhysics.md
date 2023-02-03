@@ -1,13 +1,27 @@
 ---
 layout: page
 title: Medical Physics Department 
-description: a project with a background image
-img: assets/img/projects/work/MedicalPhysics/PicFrom2014.png
+description: Projects from when I was an undergraduate student at UW-Madison as a member of the Medical Physics Department
+img: assets/img/projects/work/MedicalPhysics/medicalPhysics_logo.png
 importance: 4
-category: example
+category: hide
 ---
 
-Medical Physics
+<div>
+<h2></h2>
+</div>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0-center">
+        {% include figure.html path="assets/img/projects/work/.png" title="example image" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+<div class="caption">
+
+</div>
+
+
 Four Dimentional - Digital Subtaction Angiogrophy (4D-DSA)
 
 Quantitative Analysis of Artifacts in Volumetric DSA: the Relative Contributions of Beam Hardening and Scatter to Vessel Dropout Behind Highly Attenuating Structures

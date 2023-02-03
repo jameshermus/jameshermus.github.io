@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Select journal publications in inverse chronological order.
+description: Select journal publications in inverse chronological order. If you have trouble accessing any papers related to my work or that of my lab members feel free to email me directly.
 years: [2022, 2020, 2018]
 nav: true
 nav_order: 1

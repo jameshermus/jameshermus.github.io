@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2022-2-1 15:59:00-0400
+date: 2023-2-1 15:59:00-0400
 inline: true
 ---
 
-Beginning a postdoc in Switzerland at EPFL with the LASA lab directed by Aude Billard
+James started a Postdoctoral Research position in Switzerland at the Learning Algorithms and Systems (LASA) lab at EPFL under the direction of Professor Aude Billard. 

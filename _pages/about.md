@@ -18,8 +18,19 @@ news: true  # includes a list of news items
 social: true  # includes social icons at the bottom of the page
 ---
 
-James Hermus is a PostDoc and 50% Lecturer at MIT. He recently compleded his PhD in Mechanical Engineering and is a member of the Newman Laboratory under the direction of Professor Neville Hogan. His research investigates human physical interaction during circularly constrain motion–turning a crank.  The focus of his work is to understand fundamentals about how humans manage physical interaction to improve rehabilitation and robotics. Originally from Wisconsin, he earned his bachelor’s degree in Biomedical Engineering with an Honors in Research at the University of Wisconsin – Madison in 2016. During his undergraduate studies, he worked in the Neuromuscular Biomechanics lab of Professor Darryl Thelen where he helped in the design and testing of a novel sensor for measuring tendon stress. James is interested in research that will aid individuals with disabilities.
-
+James Hermus is currently a Postdoctoral Researcher in the Learning Algorithms and Systems (LASA) lab at EPFL under the direction of Professor Aude Billard. He previously completed his PhD in Mechanical Engineering and as a member of the Newman Laboratory under the direction of Professor Neville Hogan. His research investigated human physical interaction during circularly constrain motion–turning a crank.  The focus of his work was to understand fundamentals about how humans manage physical interaction to improve rehabilitation and robotics. 
+<p>
+Originally from Wisconsin, he earned his bachelor’s degree in Biomedical Engineering with an Honors in Research at the University of Wisconsin – Madison in 2016. During his undergraduate studies, he worked in the Neuromuscular Biomechanics lab of Professor Darryl Thelen where he helped in the design and testing of a novel sensor for measuring tendon stress. James is especially interested in research that will aid individuals with disabilities. 
+<p>
+Outside of research James enjoys rock climbing, ski touring, and working on projects. As a graduate student he was heavily involved with the MIT Outing Club (MITOC) and MakerWorkShop a student run shop on campus. 
+<p>
+<h3 class="card-title font-weight-medium">Research Interests</h3> <div>
+<ul>
+  <li> Physical interaction -- tasks with substantial force and motion </li>
+  <li> Kinematic redundancy </li>
+  <li> System identification of mechanical impedance </li>
+</ul>
+<p>
 <!-- Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Exoskeliton Cuff
+title: Exoskeleton Cuff
 description:
 img: assets/img/projects/work/exoCuff/closeUp.jpg
 importance: 3

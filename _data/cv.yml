@@ -32,14 +32,31 @@
   contents:
     - title: Post-Doctoral Researcher and 50% Lecturer
       institution: Massachusetts Institute of Technology
-      year: 2022
+      year: Fall 2022
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
+        - Taught recitations for 2.151 -- Advanced System Dynamics and Control
+        - Continued collaborations with Univesity of Pittsburg 
+        - Completed papers from PhD work
+    - title: Graduate Researcher Assistant
+      institution: Massachusetts Institute of Technology
+      year: Fall 2022
+      description:
+        - Lab Director: Neville Hogan, Ph.D.
+        - Research Topics: Motor Neuroscience, Physical Interaction, Kinematically Redundant Robotics
+    - title: Undergraduate Research Assistant
+      institution: Massachusetts Institute of Technology
+      year: Fall 2022
+      description:
+        - Taught recitations for 2.151 -- Advanced System Dynamics and Control
+        - Continued collaborations with Univesity of Pittsburg 
+        - Completed papers from PhD work
+    - title: Undergraduate Research Assistant
+      institution: Massachusetts Institute of Technology
+      year: Fall 2022
+      description:
+        - Taught recitations for 2.151 -- Advanced System Dynamics and Control
+        - Continued collaborations with Univesity of Pittsburg 
+        - Completed papers from PhD work
 
 - title: Open Source Projects
   type: time_table
