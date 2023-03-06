@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Exploiting Redundancy to Facilitate Physical Interaction
-description: This work was published in  <a href="https://doi.org/10.1109/TRO.2021.3086632">IEEE T-RO</a>. The below video was presnted as an oral presenation and poster as part of ICRA 2022 in Philadelphia. 
+description: This work was published in  <a href="https://doi.org/10.1109/TRO.2021.3086632">IEEE T-RO</a>. The below video was presented as an oral presenation and poster as part of ICRA 2022 in Philadelphia. 
 img: /assets/img/projects/work/redundancy/ExperimentalSetup.png
 importance: 1
 category: work
