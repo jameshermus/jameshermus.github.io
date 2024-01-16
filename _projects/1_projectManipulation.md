@@ -8,7 +8,7 @@ category: work
 ---
 
 <div class="row">
-<a href="{{ 6.8323_FinalReport.pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>
+<a href="{{ '6.8323_FinalReport.pdf' | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" class="float-right"><i class="fas fa-file-pdf"></i></a>
 </div>
 
 <div class="row">
