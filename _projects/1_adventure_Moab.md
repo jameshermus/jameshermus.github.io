@@ -4,7 +4,7 @@ title: Moab
 description: Moab, UT
 img: assets/img/projects/adventures/Moab/moab_rap.jpg
 importance: 1
-category: adventure
+category: hide
 ---
 
 <div class="row justify-content-sm-center">

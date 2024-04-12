@@ -4,7 +4,7 @@ title: Alaska
 description: Alaska
 img: assets/img/projects/adventures/Alaska/alaska_northernLights.jpg
 importance: 1
-category: adventure
+category: hide
 ---
 
 <div class="row">

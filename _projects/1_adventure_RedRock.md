@@ -4,7 +4,7 @@ title: Red Rocks
 description: Red Rocks, NV
 img: assets/img/projects/adventures/RedRock/redRock_book.jpg
 importance: 1
-category: adventure
+category: hide
 ---
 
 <div class="row">

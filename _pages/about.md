@@ -24,6 +24,27 @@ Originally from Wisconsin, he earned his bachelor’s degree in Biomedical Engin
 <p>
 Outside of research James enjoys rock climbing, ski touring, and working on projects. As a graduate student he was heavily involved with the MIT Outing Club (MITOC) and MakerWorkShop. 
 <p>
+
+<div class="row justify-content-center mt-4"> <!-- Added mt-4 class to add space between the sections -->
+    <div class="col-sm-8 text-center">
+        <hr> <!-- Horizontal line to separate sections -->
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-sm-8 mt-3 mt-md-0 text-center"> <!-- Added text-center class here -->
+        <a href="https://news.mit.edu/2023/james-hermus-learning-challenges-shape-mechanical-engineers-path-0212">
+            <img src="assets/img/MITNewsPhoto.png" alt="example image" class="img-fluid rounded z-depth-1" style="max-width: 300px;">
+        </a>
+    </div>
+</div>
+
+<div class="row justify-content-center mt-4"> <!-- Added mt-4 class to add space between the sections -->
+    <div class="col-sm-8 text-center">
+        <hr> <!-- Horizontal line to separate sections -->
+    </div>
+</div>
+
 <h3 class="card-title font-weight-medium">Research Interests</h3> <div>
 <ul>
   <li> Physical interaction -- tasks with substantial force and motion </li>
@@ -31,6 +52,7 @@ Outside of research James enjoys rock climbing, ski touring, and working on proj
   <li> System identification of mechanical impedance </li>
 </ul>
 <p>
+
 <!-- Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->

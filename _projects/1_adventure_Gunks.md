@@ -4,7 +4,7 @@ title: Gunks
 description: Shawangunk, NY.
 img: assets/img/projects/adventures/Gunks/gunks_view.jpg
 importance: 1
-category: adventure
+category: hide
 ---
 
 <div class="row">
