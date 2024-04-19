@@ -20,7 +20,7 @@ Abstract: Assistive devices offer the opportunity to augment human motor behavio
     <title>Title of the document</title>
   </head>
   <body>
-    <iframe src="/assets/pdf/US20210251839A1.pdf" width="100%" height="500px">
+    <iframe src="/assets/pdf/US11690776.pdf" width="100%" height="500px">
     </iframe>
   </body>
 </html>
