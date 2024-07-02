@@ -18,7 +18,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-James Hermus is currently a Postdoctoral Researcher in the Learning Algorithms and Systems (LASA) Laboratory at EPFL under the direction of Professor Aude Billard. He previously completed his PhD in Mechanical Engineering as a member of the Newman Laboratory under the direction of Professor Neville Hogan. His dissertation research investigated human physical interaction during circularly constrained motion–turning a crank.  The focus of his work was to understand fundamentals about how humans manage physical interaction to improve rehabilitation and robotics. 
+James Hermus served as a Postdoctoral Researcher in the Learning Algorithms and Systems (LASA) Laboratory at EPFL under the direction of Professor Aude Billard. He completed his PhD in Mechanical Engineering as a member of the Newman Laboratory under the direction of Professor Neville Hogan. His dissertation research investigated human physical interaction during circularly constrained motion–turning a crank.  The focus of his work was to understand fundamentals about how humans manage physical interaction to improve rehabilitation and robotics. 
 <p>
 Originally from Wisconsin, he earned his bachelor’s degree in Biomedical Engineering with an Honors in Research at the University of Wisconsin – Madison in 2016. During his undergraduate studies, he worked in the Neuromuscular Biomechanics lab of Professor Darryl Thelen where he helped in the design and testing of a novel sensor for measuring tendon stress. James is especially interested in research that will aid individuals with disabilities. 
 <p>
