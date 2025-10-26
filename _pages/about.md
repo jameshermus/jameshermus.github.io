@@ -32,9 +32,15 @@ Outside of research James enjoys rock climbing, ski touring, and working on proj
 </div>
 
 <div class="row justify-content-center">
-    <div class="col-sm-8 mt-3 mt-md-0 text-center"> <!-- Added text-center class here -->
+    <!-- MIT first on small screens; side-by-side from md+ -->
+    <div class="col-12 col-md-6 mt-3 mt-md-0 text-center">
         <a href="https://news.mit.edu/2023/james-hermus-learning-challenges-shape-mechanical-engineers-path-0212">
-            <img src="assets/img/MITNewsPhoto.png" alt="example image" class="img-fluid rounded z-depth-1" style="max-width: 300px;">
+            <img src="assets/img/MITNewsPhoto.png" alt="MIT News article" class="img-fluid rounded z-depth-1" style="max-width: 300px;">
+        </a>
+    </div>
+    <div class="col-12 col-md-6 mt-3 mt-md-0 text-center">
+        <a href="https://www.idiap.ch/en/allnews/idiap-researcher-awarded-snsf-ambizione-grant-to-advance-human-motor-control-and-robotics" target="_blank">
+            <img src="assets/img/Ambizione.png" alt="Idiap news" class="img-fluid rounded z-depth-1" style="max-width: 300px;">
         </a>
     </div>
 </div>

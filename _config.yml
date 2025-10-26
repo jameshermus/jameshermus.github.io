@@ -72,10 +72,10 @@ gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: james-hermus-ab0346229 # your LinkedIn user name
-scholar_userid: citations?user=FIMmdDoAAAAJ&hl=en&oi=ao # your Google Scholar ID
+scholar_userid: FIMmdDoAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: # your ORCID ID
+orcid_id: # 0000-0001-8926-8860 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -190,8 +190,9 @@ plugins:
   - jekyll/scholar
   - jekyll-sitemap
   - jekyll-link-attributes
-  - jekyll-twitter-plugin
   - jemoji
+# - jekyll-twitter-plugin
+
 
 # Sitemap settings
 defaults:
