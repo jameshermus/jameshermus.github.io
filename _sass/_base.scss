@@ -84,6 +84,11 @@ blockquote {
   }
 }
 
+/* Targeted tweak: lighter background for the About page hiring card */
+.card.hiring-card {
+  background-color: var(--hiring-card-bg-color);
+}
+
 // Citation
 
 .citation, .citation-number {
