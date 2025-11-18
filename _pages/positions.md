@@ -19,7 +19,7 @@ nav_order: 5
 We are seeking a PhD student to join a new research project on **human motor control and robotic manipulation**, funded by an [SNSF Ambizione grant](https://www.idiap.ch/en/allnews/idiap-researcher-awarded-snsf-ambizione-grant-to-advance-human-motor-control-and-robotics) led by James Hermus.
 
 
-The goal of the project is to investigate how humans regulate **impedance** during physical interaction, and how these principles can inspire **robotic control and learning algorithms**. This position bridges neuroscience, control theory, and robot learning—combining **human experiments**, **computational modeling**, and **robotic implementation**.
+The goal of the project is to investigate how humans regulate **impedance** during physical interaction, and how these principles can inspire **robotic control and learning algorithms**. This position will bridge neuroscience, control theory, and robot learning—combining **human experiments**, **computational modeling**, and **robotic implementation**.
 
 The student will be based at the [Idiap Research Institute](https://www.idiap.ch) (Martigny, Switzerland), as part of the [Robot Learning & Interaction Group](https://www.idiap.ch/en/scientific-research/robot-learning-and-interaction) (Sylvain Calinon, PhD) and collaborate with the [BioRobotics Laboratory](https://www.epfl.ch/labs/biorob/) (Prof. Auke Ijspeert) at **EPFL**.
 
