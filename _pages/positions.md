@@ -58,7 +58,9 @@ James also welcomes informal email inquiries about the position.
 
 #### Master’s projects and pathway to PhD
 
-If you are a current Master’s student interested in a **semester project**, **Master’s thesis**, or a **visiting/internship project** related to this topic, please contact James Hermus at [james.hermus@idiap.ch](mailto:james.hermus@idiap.ch).  
+If you are a current Master’s student interested in a **semester project**, **Master’s thesis**, or a **visiting/internship project** related to this topic, please contact James Hermus at [james.hermus@idiap.ch](mailto:james.hermus@idiap.ch).
+
+Two master's students on related topics are now avalible on the [Idiap Student Projects Page](https://www.epfl.ch/labs/idiap/student-projects/).
 
 We especially welcome students who are **interested in continuing to a PhD** after a successful Master’s or visiting project.
 
