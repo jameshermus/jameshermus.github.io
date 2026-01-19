@@ -51,6 +51,29 @@ Outside of research James enjoys rock climbing, ski touring, and working on proj
   </div>
 </div>
 
+<div class="row justify-content-center mt-3 mb-4">
+  <div class="col-12 col-md-10 col-lg-8">
+    <div class="card shadow-sm text-center hiring-card" style="border-radius:16px;">
+      <div class="card-body">
+        <!-- Optional image: uncomment to include your figure -->
+        <!--
+        <img src="{{ '/assets/img/AmbizioneFig.png' | relative_url }}"
+             alt="Ambizione project: human motor control and robotic manipulation"
+             class="img-fluid rounded mb-3"
+             style="max-width:640px;">
+        -->
+        <h4 class="card-title mb-2">Now Recruiting: Masters Student</h4>
+        <p class="card-text mb-3">
+          Join our research project with Swiss Cat+ working on automated discovery of material properties using <strong>dextrous manipulation, vision tools, and learning</strong>.
+        </p>
+        <a href="{{ 'https://www.epfl.ch/research/facilities/swisscat/wp-content/uploads/Master-project-robotics-JT_summary.pdf' | relative_url }}" class="btn btn-primary">
+          View Position Details
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="row justify-content-center mt-4"> <!-- Added mt-4 class to add space between the sections -->
     <div class="col-sm-8 text-center">
         <hr> <!-- Horizontal line to separate sections -->
