@@ -6,6 +6,7 @@ description: PhD in human motor control and contact-rich robotic manipulation at
 hide_description: true
 nav: True
 nav_order: 5
+published: False
 ---
 
 **Supervisors:** James Hermus, PhD (Idiap/EPFL); Sylvain Calinon, PhD (Idiap); and Prof. Auke Ijspeert (EPFL)  

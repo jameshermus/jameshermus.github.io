@@ -28,6 +28,7 @@ Originally from Wisconsin, he earned his bachelor’s degree in Biomedical Engin
 Outside of research James enjoys rock climbing, ski touring, and working on projects. As a graduate student he was heavily involved with the MIT Outing Club (MITOC) and MakerWorkShop. 
 <p>
 
+{% comment %}
 <div class="row justify-content-center mt-3 mb-4">
   <div class="col-12 col-md-10 col-lg-8">
     <div class="card shadow-sm text-center hiring-card" style="border-radius:16px;">
@@ -50,6 +51,7 @@ Outside of research James enjoys rock climbing, ski touring, and working on proj
     </div>
   </div>
 </div>
+{% endcomment %}
 
 <div class="row justify-content-center mt-4"> <!-- Added mt-4 class to add space between the sections -->
     <div class="col-sm-8 text-center">
