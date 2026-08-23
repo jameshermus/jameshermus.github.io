@@ -1,0 +1,236 @@
+# -----------------------------------------------------------------------------
+# Journals with rolling submission  ->  rendered at /journals/
+# -----------------------------------------------------------------------------
+#
+# Special issues DO have deadlines — put those in _data/conferences.yml instead.
+#
+#   - name: IEEE Transactions on Robotics (T-RO)
+#     url: https://...
+#     jif: 11.1              # Clarivate Journal Impact Factor. Omit if not indexed.
+#     jif_year: 2025         # which JCR release the number is from
+#     jif_note: not assigned # shown instead of a number when there is no JIF
+#     pubs: 2                # how many of my papers appeared here. Omit for zero.
+#                            #   Journals with pubs > 0 are listed first, ordered
+#                            #   by this count. Counts come from _bibliography/papers.bib
+#                            #   — update them when you add a paper.
+#     tags: [robotics]
+#     note: one-line remark (scope, turnaround, conference tie-in)
+#
+# JIF values below are from the JCR 2025 release (published June 2026) via
+# ooir.org, except where jif_year says otherwise. Refresh them each summer.
+# -----------------------------------------------------------------------------
+
+# ---------------------------------------------------------------- robotics ---
+
+- name: Science Robotics
+  url: https://www.science.org/journal/scirobotics
+  jif: 25.5
+  jif_year: 2025
+  tags: [robotics]
+  note: Rolling; presubmission inquiry recommended.
+
+- name: IEEE Transactions on Robotics (T-RO)
+  pubs: 1
+  url: https://www.ieee-ras.org/publications/t-ro
+  jif: 11.1
+  jif_year: 2025
+  tags: [robotics, control]
+  note: Rolling. Accepted papers may be presented at ICRA/IROS.
+
+- name: The International Journal of Robotics Research (IJRR)
+  url: https://journals.sagepub.com/home/ijr
+  jif: 7.7
+  jif_year: 2025
+  tags: [robotics, manipulation]
+  note: Rolling.
+
+- name: IEEE Robotics & Automation Magazine (RAM)
+  url: https://www.ieee-ras.org/publications/ram
+  jif: 9.8
+  jif_year: 2025
+  pubs: 1
+  tags: [robotics, manipulation]
+  note: Magazine format — tutorials and accessible overviews alongside research articles.
+
+- name: IEEE Robotics and Automation Letters (RA-L)
+  pubs: 2
+  url: https://www.ieee-ras.org/publications/ra-l
+  jif: 5.3
+  jif_year: 2025
+  tags: [robotics, manipulation]
+  note: Rolling, monthly cycles. Option to present at ICRA or IROS if submitted in the right window.
+
+- name: IEEE Transactions on Haptics (ToH)
+  url: https://www.computer.org/csdl/journal/th
+  jif: 3.1
+  jif_year: 2025
+  tags: [haptics]
+  note: Rolling; short-paper track tied to World Haptics.
+
+# ------------------------------------------------ motor control & neuro ---
+
+- name: Journal of Neuroscience
+  url: https://www.jneurosci.org/
+  jif: 4.3
+  jif_year: 2025
+  tags: [neuroscience]
+  note: Rolling.
+
+- name: PLOS Computational Biology
+  url: https://journals.plos.org/ploscompbiol/
+  jif: 3.6
+  jif_year: 2024
+  tags: [neuroscience, motor-control]
+  note: Rolling; open access.
+
+- name: eNeuro
+  url: https://www.eneuro.org/
+  jif: 2.6
+  jif_year: 2025
+  tags: [neuroscience, motor-control]
+  note: Rolling; open access, sister journal to J. Neurosci.
+
+- name: Journal of Neurophysiology
+  pubs: 2
+  url: https://journals.physiology.org/journal/jn
+  jif: 2.3
+  jif_year: 2025
+  tags: [motor-control, neuroscience]
+  note: Rolling. Core venue for human motor control — low JIF, high standing in the field.
+
+- name: eLife
+  url: https://elifesciences.org/
+  jif_note: not assigned
+  tags: [neuroscience, motor-control]
+  note: Rolling; reviewed-preprint model, which is why Clarivate no longer assigns a JIF.
+
+# ------------------------------------------------- biomechanics & rehab ---
+
+- name: IEEE Transactions on Neural Systems and Rehabilitation Engineering (TNSRE)
+  url: https://www.embs.org/tnsre/
+  jif: 6.6
+  jif_year: 2025
+  tags: [rehab, motor-control]
+  note: Rolling.
+
+- name: Journal of NeuroEngineering and Rehabilitation (JNER)
+  url: https://jneuroengrehab.biomedcentral.com/
+  jif: 6.0
+  jif_year: 2025
+  tags: [rehab, biomechanics]
+  note: Rolling; open access.
+
+- name: IEEE Transactions on Biomedical Engineering (TBME)
+  url: https://www.embs.org/tbme/
+  jif: 4.4
+  jif_year: 2025
+  tags: [rehab, biomechanics]
+  note: Rolling.
+
+- name: Journal of Biomechanics
+  url: https://www.jbiomech.com/
+  jif: 2.9
+  jif_year: 2025
+  tags: [biomechanics]
+  note: Rolling.
+
+# ------------------------------------------------------------- control ---
+
+- name: Annual Review of Control, Robotics, and Autonomous Systems
+  url: https://www.annualreviews.org/journal/control
+  jif: 14.6
+  jif_year: 2025
+  tags: [control, robotics]
+  note: By invitation; proposals accepted.
+
+- name: IEEE Transactions on Automatic Control (TAC)
+  url: https://ieeecss.org/publication/transactions-automatic-control
+  jif: 7.0
+  jif_year: 2025
+  tags: [control]
+  note: Rolling.
+
+- name: Automatica
+  url: https://www.sciencedirect.com/journal/automatica
+  jif: 6.2
+  jif_year: 2025
+  tags: [control]
+  note: Rolling.
+
+# ---------------------------------------------------------- generalist ---
+
+- name: Nature
+  url: https://www.nature.com/nature/
+  jif: 56.1
+  jif_year: 2025
+  tags: [generalist, neuroscience]
+  note: Rolling; presubmission inquiry strongly recommended. Very low acceptance rate.
+
+- name: Science
+  url: https://www.science.org/journal/science
+  jif: 47.3
+  jif_year: 2025
+  tags: [generalist, neuroscience, robotics]
+  note: Rolling; presubmission inquiry recommended. Sister journal to Science Robotics.
+
+- name: Nature Biomedical Engineering
+  url: https://www.nature.com/natbiomedeng/
+  jif: 26.3
+  jif_year: 2025
+  tags: [generalist, rehab, robotics]
+  note: Rolling. Good fit for rehabilitation robotics, exoskeletons, and neuroprosthetics.
+
+- name: Nature Communications
+  pubs: 1
+  url: https://www.nature.com/ncomms/
+  jif: 18.1
+  jif_year: 2025
+  tags: [generalist, neuroscience, robotics]
+  note: Rolling; open access.
+
+- name: Nature Human Behaviour
+  url: https://www.nature.com/nathumbehav/
+  jif: 17.5
+  jif_year: 2025
+  tags: [generalist, neuroscience, motor-control]
+  note: Rolling. Behavioural science framing — a fit for motor learning and adaptation studies.
+
+- name: Proceedings of the National Academy of Sciences (PNAS)
+  url: https://www.pnas.org/
+  jif: 9.5
+  jif_year: 2025
+  tags: [generalist, neuroscience, motor-control]
+  note: Rolling; direct submission or the NAS-member contributed track.
+
+- name: Scientific Reports
+  pubs: 2
+  url: https://www.nature.com/srep/
+  jif: 4.9
+  jif_year: 2025
+  tags: [generalist, neuroscience, biomechanics]
+  note: Rolling; open access, high volume. Reviewed for soundness rather than novelty.
+
+# ------------------------------------------- medical imaging (earlier work) ---
+
+- name: Medical Physics
+  url: https://aapm.onlinelibrary.wiley.com/journal/24734209
+  jif: 3.2
+  jif_year: 2025
+  pubs: 1
+  tags: [medical-imaging]
+  note: From my earlier CT fluence-modulation work at UW–Madison.
+
+- name: Physics in Medicine & Biology
+  url: https://iopscience.iop.org/journal/0031-9155
+  jif: 3.1
+  jif_year: 2025
+  pubs: 1
+  tags: [medical-imaging]
+  note: From my earlier CT fluence-modulation work at UW–Madison.
+
+- name: Journal of Medical Imaging (SPIE)
+  url: https://www.spiedigitallibrary.org/journals/journal-of-medical-imaging
+  jif_note: unverified
+  pubs: 1
+  tags: [medical-imaging]
+  note: From my earlier CT fluence-modulation work at UW–Madison.

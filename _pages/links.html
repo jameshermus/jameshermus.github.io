@@ -1,0 +1,40 @@
+---
+layout: page
+permalink: /links/
+title: Links
+description: A list of links I find useful. 
+nav: true
+nav_order: 5
+---
+
+<div class="dl">
+
+{%- for section in site.data.links %}
+<div class="lk-section">
+  <h2 class="lk-h">{{ section.category }}</h2>
+  {%- if section.blurb %}<p class="lk-blurb">{{ section.blurb }}</p>{%- endif %}
+  {%- for l in section.links %}
+  <div class="lk-item">
+    <div class="lk-name">
+      {%- if l.url contains '://' -%}
+      <a href="{{ l.url }}">{{ l.name }}</a>
+      {%- else -%}
+      <a class="lk-internal" href="{{ l.url | relative_url }}">{{ l.name }}</a>
+      {%- endif -%}
+    </div>
+    {%- if l.note %}<div class="lk-note">{{ l.note }}</div>{%- endif %}
+  </div>
+  {%- endfor %}
+</div>
+{%- endfor %}
+
+<hr>
+<p class="dl-fineprint">
+  Know something that belongs here? <a href="mailto:{{ site.email | encode_email }}">Send it my way</a>,
+  or open a pull request against
+  <a href="https://github.com/jameshermus/jameshermus.github.io/blob/source/_data/links.yml">_data/links.yml</a>.
+</p>
+
+</div>
+
+{% include venues_style.html %}

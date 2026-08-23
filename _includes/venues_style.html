@@ -1,0 +1,103 @@
+<!-- shared styling for /deadlines/ and /journals/ -->
+<style>
+.dl { margin-top: 1rem; }
+.dl-h { font-size: 1.05rem; text-transform: uppercase; letter-spacing: .06em;
+        color: var(--global-text-color-light); border-bottom: 1px solid var(--global-divider-color);
+        padding-bottom: .3rem; margin: 2.2rem 0 1rem; }
+.dl-h:first-of-type { margin-top: 1.2rem; }
+.dl-lede { font-size: .85rem; color: var(--global-text-color-light); line-height: 1.6; }
+
+.dl-controls { margin-bottom: 1.4rem; }
+.dl-search { width: 100%; padding: .45rem .7rem; font-size: .95rem; border-radius: 4px;
+             border: 1px solid var(--global-divider-color); background: var(--global-bg-color);
+             color: var(--global-text-color); }
+.dl-search:focus { outline: none; border-color: var(--global-theme-color); }
+.dl-chips { margin: .7rem 0 .5rem; display: flex; flex-wrap: wrap; gap: .35rem; }
+.dl-chip { font-size: .78rem; padding: .12rem .55rem; border-radius: 999px; cursor: pointer;
+           border: 1px solid var(--global-divider-color); background: transparent;
+           color: var(--global-text-color-light); }
+.dl-chip:hover { border-color: var(--global-theme-color); color: var(--global-theme-color); }
+.dl-chip.active { background: var(--global-theme-color); border-color: var(--global-theme-color); color: #fff; }
+.dl-chip-clear { font-style: italic; opacity: .65; }
+.dl-toggle { font-size: .82rem; color: var(--global-text-color-light); font-weight: normal; cursor: pointer; }
+.dl-toggle input, .dl-toggle select { margin-right: .35rem; vertical-align: middle; }
+.dl-toggle select { background: var(--global-bg-color); color: var(--global-text-color);
+                    border: 1px solid var(--global-divider-color); border-radius: 3px; padding: .1rem .3rem; }
+
+.dl-item { display: grid; grid-template-columns: 5.2rem 1fr; gap: .9rem;
+           padding: .8rem 0; border-bottom: 1px solid var(--global-divider-color); }
+.dl-item.dl-hide { display: none; }
+.dl-when { text-align: right; padding-top: .1rem; }
+.dl-count { display: inline-block; font-size: .82rem; font-weight: 600; line-height: 1.25;
+            padding: .18rem .45rem; border-radius: 4px; white-space: nowrap;
+            background: var(--global-code-bg-color); color: var(--global-text-color-light); }
+.dl-count.urgent { background: #d9534f; color: #fff; }
+.dl-count.soon   { background: #e8a33d; color: #fff; }
+.dl-count.past   { opacity: .5; text-decoration: line-through; }
+.dl-count-tba    { font-weight: 500; opacity: .7; }
+.dl-item.is-past .dl-title a, .dl-item.is-past .dl-full { opacity: .55; }
+
+.dl-title { font-size: 1rem; font-weight: 600; line-height: 1.3; }
+.dl-title a { color: var(--global-text-color); }
+.dl-title a:hover { color: var(--global-theme-color); }
+.dl-flag { font-size: .68rem; font-weight: 500; text-transform: uppercase; letter-spacing: .04em;
+           color: var(--global-text-color-light); border: 1px dashed var(--global-divider-color);
+           border-radius: 3px; padding: 0 .28rem; vertical-align: 1px; white-space: nowrap; }
+.dl-full { font-size: .82rem; color: var(--global-text-color-light); line-height: 1.35; margin-bottom: .25rem; }
+.dl-meta { font-size: .82rem; color: var(--global-text-color-light); line-height: 1.5; }
+.dl-meta strong { color: var(--global-text-color); font-weight: 600; }
+.dl-tz { opacity: .6; font-size: .74rem; }
+.dl-extra { opacity: .8; }
+.dl-ics { font-size: .72rem; margin-left: .35rem; opacity: .55; white-space: nowrap; }
+.dl-ics:hover { opacity: 1; }
+.dl-note { font-size: .82rem; font-style: italic; color: var(--global-text-color-light); margin-top: .15rem; }
+.dl-tags { margin-top: .35rem; display: flex; flex-wrap: wrap; gap: .25rem; }
+.dl-tag { font-size: .68rem; padding: .05rem .4rem; border-radius: 3px;
+          background: var(--global-code-bg-color); color: var(--global-text-color-light); }
+.dl-empty { font-size: .85rem; font-style: italic; color: var(--global-text-color-light); }
+.dl-fineprint { font-size: .78rem; color: var(--global-text-color-light); line-height: 1.6; }
+.dl-crosslink { font-size: .85rem; margin-bottom: 1.2rem; }
+
+/* journals page */
+.jr-item { display: block; padding: .7rem 0; border-bottom: 1px solid var(--global-divider-color); }
+.jr-item.dl-hide { display: none; }
+.jr-head { display: flex; align-items: baseline; justify-content: space-between; gap: .6rem; }
+.jr-name { font-size: .97rem; font-weight: 600; line-height: 1.35; }
+.jr-name a { color: var(--global-text-color); }
+.jr-name a:hover { color: var(--global-theme-color); }
+.jr-pubs { flex: none; font-size: .7rem; font-weight: 600; white-space: nowrap;
+           padding: .1rem .45rem; border-radius: 999px;
+           background: var(--global-theme-color); color: #fff; }
+.jr-jif { border: 1px solid var(--global-divider-color); background: transparent; }
+.jr-jif-none { font-style: italic; }
+.jr-group { font-size: .95rem; text-transform: uppercase; letter-spacing: .06em;
+            color: var(--global-text-color-light); border-bottom: 1px solid var(--global-divider-color);
+            padding-bottom: .3rem; margin: 2rem 0 .2rem; }
+.jr-group:first-child { margin-top: .6rem; }
+.jr-group.dl-hide { display: none; }
+.jr-group small { display: block; text-transform: none; letter-spacing: 0; font-size: .76rem;
+                  font-style: italic; opacity: .8; margin-top: .25rem; }
+
+@media (max-width: 480px) {
+  .dl-item { grid-template-columns: 1fr; gap: .3rem; }
+  .dl-when { text-align: left; }
+  .dl-jif-year { display: inline; margin-left: .3rem; }
+}
+</style>
+
+<!-- /links/ -->
+<style>
+.lk-section { margin-bottom: 2.2rem; }
+.lk-h { font-size: 1.05rem; text-transform: uppercase; letter-spacing: .06em;
+        color: var(--global-text-color-light); border-bottom: 1px solid var(--global-divider-color);
+        padding-bottom: .3rem; margin: 0 0 .3rem; }
+.lk-blurb { font-size: .8rem; font-style: italic; color: var(--global-text-color-light); margin: .4rem 0 .2rem; }
+.lk-item { padding: .55rem 0; border-bottom: 1px solid var(--global-divider-color); }
+.lk-item:last-child { border-bottom: none; }
+.lk-name { font-size: .95rem; font-weight: 600; line-height: 1.35; }
+.lk-name a { color: var(--global-text-color); }
+.lk-name a:hover { color: var(--global-theme-color); }
+.lk-name a::after { content: " ↗"; font-size: .7em; opacity: .35; }
+.lk-name a.lk-internal::after { content: " →"; opacity: .55; }
+.lk-note { font-size: .82rem; color: var(--global-text-color-light); line-height: 1.45; }
+</style>
