@@ -4,9 +4,15 @@
 # papers.bib (jekyll-scholar matches on the exact string), so include
 # initials as well as the full given name.
 #
-# Only add an entry once you have checked the URL — a wrong link is worse
-# than no link. Coauthors without an entry simply render as plain text,
-# which is a fine default.
+# Only add an entry once you have OPENED the URL. A 200 response is not
+# enough: several university directories return 200 for a JavaScript shell
+# with no content, which is how the first Thelen link got in here. A wrong
+# link is worse than no link — coauthors without an entry simply render as
+# plain text, which is a fine default.
+#
+# Note: _config.yml max_author_limit controls how many authors are shown
+# before the "N more authors" toggle. Links only render for authors inside
+# that limit, so a coauthor who is always tenth author will never show one.
 
 "Hogan":
   - firstname: ["Neville", "N."]
@@ -22,7 +28,7 @@
 
 "Thelen":
   - firstname: ["Darryl G.", "Darryl", "D. G.", "D."]
-    url: https://directory.engr.wisc.edu/me/faculty/thelen_darryl
+    url: https://engineering.wisc.edu/directory/profile/darryl-thelen
 
 # Coauthors appearing in papers.bib without a link yet. Add a url when you
 # have one; delete the name if you would rather leave it unlinked.
