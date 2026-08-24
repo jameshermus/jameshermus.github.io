@@ -2,10 +2,10 @@
 layout: page
 permalink: /deadlines/
 title: deadlines
-description: Submission deadlines for conferences in human motor control, biomechanics, robotics, and control. Countdowns are computed in the local time zone.
+description: Submission deadlines for conferences and workshops in human motor control, biomechanics, robotics, and control. Countdowns are computed in the local time zone.
 nav: false
 nav_order: 98
-sitemap: false
+hide_description: true
 ---
 
 {%- assign confs = site.data.conferences -%}
@@ -17,7 +17,8 @@ sitemap: false
 
 <div class="dl">
 
-<p class="dl-crosslink">Looking for where to send a paper instead? → <a href="{{ '/journals/' | relative_url }}">journals</a></p>
+<p class="post-description">{{ page.description }}
+  See also the <a href="{{ '/journals/' | relative_url }}">journal list</a>.</p>
 
 <div class="dl-controls">
   <input type="search" id="dl-search" class="dl-search" placeholder="Filter by name, place, or topic…" aria-label="Filter deadlines">
@@ -50,7 +51,11 @@ sitemap: false
       </div>
       <div class="dl-meta">{% if c.dates %}{{ c.dates }}{% endif %}{% if c.place %} · {{ c.place }}{% endif %}</div>
       {%- if c.note %}<div class="dl-note">{{ c.note }}</div>{%- endif %}
-      <div class="dl-tags">{% for t in c.tags %}<span class="dl-tag">{{ t | replace: '-', ' ' }}</span>{% endfor %}</div>
+      <div class="dl-tags">{% for t in c.tags %}<span class="dl-tag">{{ t | replace: '-', ' ' }}</span>{% endfor -%}
+        {%- if c.attendance %}<span class="dl-tag dl-tag-meta">{{ c.attendance }} attendees</span>{% endif -%}
+        {%- if c.single_track %}<span class="dl-tag dl-tag-meta">single track</span>{% endif -%}
+        {%- if c.acceptance_rate %}<span class="dl-tag dl-tag-meta">{{ c.acceptance_rate }} accepted</span>{% endif -%}
+      </div>
     </div>
   </div>
 {%- endfor %}
@@ -68,7 +73,11 @@ sitemap: false
       {%- if c.hint %}<div class="dl-meta"><strong>Submission:</strong> not announced — {{ c.hint }}</div>{%- endif %}
       <div class="dl-meta">{% if c.dates %}{{ c.dates }}{% endif %}{% if c.place %} · {{ c.place }}{% endif %}</div>
       {%- if c.note %}<div class="dl-note">{{ c.note }}</div>{%- endif %}
-      <div class="dl-tags">{% for t in c.tags %}<span class="dl-tag">{{ t | replace: '-', ' ' }}</span>{% endfor %}</div>
+      <div class="dl-tags">{% for t in c.tags %}<span class="dl-tag">{{ t | replace: '-', ' ' }}</span>{% endfor -%}
+        {%- if c.attendance %}<span class="dl-tag dl-tag-meta">{{ c.attendance }} attendees</span>{% endif -%}
+        {%- if c.single_track %}<span class="dl-tag dl-tag-meta">single track</span>{% endif -%}
+        {%- if c.acceptance_rate %}<span class="dl-tag dl-tag-meta">{{ c.acceptance_rate }} accepted</span>{% endif -%}
+      </div>
     </div>
   </div>
 {%- endfor %}
@@ -78,11 +87,12 @@ sitemap: false
 <hr>
 <p class="dl-fineprint">
   Countdowns are computed in your browser's local time zone from the deadline's stated zone.
-  Entries marked <span class="dl-flag">~ unconfirmed</span> or “not announced” are my best estimate from previous
-  years — <strong>always confirm on the official site before you rely on a date.</strong>
+  Entries marked “not announced” are best estimates from previous
+  years. In addition, there could be errors so while its a good reference please 
+  check the official webpages of the conferences if it impacts important professional planning. 
   Corrections and additions welcome: the list lives in
   <a href="https://github.com/jameshermus/jameshermus.github.io/blob/source/_data/conferences.yml">_data/conferences.yml</a>,
-  or just email me. Page built {{ site.time | date: "%B %-d, %Y" }}.
+  or just send an email. Page built {{ site.time | date: "%B %-d, %Y" }}.
 </p>
 
 </div>

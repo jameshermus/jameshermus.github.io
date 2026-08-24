@@ -54,11 +54,16 @@
 .dl-tags { margin-top: .35rem; display: flex; flex-wrap: wrap; gap: .25rem; }
 .dl-tag { font-size: .68rem; padding: .05rem .4rem; border-radius: 3px;
           background: var(--global-code-bg-color); color: var(--global-text-color-light); }
+.dl-tag-meta { border: 1px solid var(--global-divider-color); background: transparent; }
 .dl-empty { font-size: .85rem; font-style: italic; color: var(--global-text-color-light); }
+.post-description a { color: var(--global-theme-color); }
 .dl-fineprint { font-size: .78rem; color: var(--global-text-color-light); line-height: 1.6; }
 .dl-crosslink { font-size: .85rem; margin-bottom: 1.2rem; }
 
 /* journals page */
+.jr-scope { font-size: .84rem; line-height: 1.6; color: var(--global-text-color-light);
+            border-left: 2px solid var(--global-divider-color); padding: .1rem 0 .1rem .8rem;
+            margin-bottom: 1.3rem; }
 .jr-item { display: block; padding: .7rem 0; border-bottom: 1px solid var(--global-divider-color); }
 .jr-item.dl-hide { display: none; }
 .jr-head { display: flex; align-items: baseline; justify-content: space-between; gap: .6rem; }
@@ -68,15 +73,20 @@
 .jr-pubs { flex: none; font-size: .7rem; font-weight: 600; white-space: nowrap;
            padding: .1rem .45rem; border-radius: 999px;
            background: var(--global-theme-color); color: #fff; }
-.jr-jif { border: 1px solid var(--global-divider-color); background: transparent; }
-.jr-jif-none { font-style: italic; }
-.jr-group { font-size: .95rem; text-transform: uppercase; letter-spacing: .06em;
-            color: var(--global-text-color-light); border-bottom: 1px solid var(--global-divider-color);
-            padding-bottom: .3rem; margin: 2rem 0 .2rem; }
-.jr-group:first-child { margin-top: .6rem; }
+.jr-meta { border: 1px solid var(--global-divider-color); background: transparent; }
+.jr-meta-none { font-style: italic; }
+.jr-group { margin: 1.9rem 0 .2rem; }
+.jr-group:first-of-type { margin-top: .6rem; }
 .jr-group.dl-hide { display: none; }
-.jr-group small { display: block; text-transform: none; letter-spacing: 0; font-size: .76rem;
-                  font-style: italic; opacity: .8; margin-top: .25rem; }
+.jr-group h2 { font-size: .95rem; text-transform: uppercase; letter-spacing: .06em;
+               color: var(--global-text-color-light); border-bottom: 1px solid var(--global-divider-color);
+               padding-bottom: .3rem; margin: 0; }
+.jr-group p { font-size: .78rem; font-style: italic; color: var(--global-text-color-light);
+              margin: .35rem 0 0; line-height: 1.45; }
+.jr-caveat { font-size: .78rem; line-height: 1.55; margin: .8rem 0 0;
+             padding: .5rem .7rem; border-radius: 4px;
+             background: var(--global-code-bg-color); color: var(--global-text-color-light); }
+.jr-caveat.dl-hide { display: none; }
 
 @media (max-width: 480px) {
   .dl-item { grid-template-columns: 1fr; gap: .3rem; }

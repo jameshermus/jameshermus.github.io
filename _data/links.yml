@@ -13,21 +13,12 @@
 #         note: one-line description of why it is worth clicking
 # -----------------------------------------------------------------------------
 
-- category: Where I work
-  links:
-    - name: Idiap Research Institute
-      url: https://www.idiap.ch/
-      note: Independent research institute in Martigny, Switzerland, affiliated with EPFL.
-    - name: Robot Learning & Interaction (RLI) group
-      url: https://idiap.ch/rli/
-      note: My group at Idiap, led by Dr. Sylvain Calinon — learning manipulation skills from few demonstrations.
-
 - category: On this site
-  blurb: Two working lists I keep for my own planning — unlisted, but share them freely.
+  blurb: Two working lists for my own planning
   links:
     - name: Conference deadlines
       url: /deadlines/
-      note: Live countdowns for submission deadlines in motor control, biomechanics, robotics, and control.
+      note: Submission deadlines for conferences and workshops in human motor control, biomechanics, robotics, and control. Countdowns are computed in the local time zone.
     - name: Journals
       url: /journals/
-      note: Rolling-submission venues in the field, with current impact factors.
+      note: Journals we keep an eye on related to human motor control, robotics, and machine-learning.

@@ -30,6 +30,14 @@
 #     tags: [robotics, manipulation]
 #     note: optional one-line remark
 #
+#     attendance: ~5000              # rough head count — approximate, for travel planning
+#                                    #   (NOT `size`: Liquid reserves that, it returns a field count)
+#     single_track: true             # everyone in one room; changes what the meeting is for
+#     acceptance_rate: "~43%"        # only if taken from an official report; varies year to year
+#
+# `attendance` and `single_track` encode the "ICRA is too big to meet anyone" judgement that nobody
+# publishes in one place. Leave them out rather than guessing.
+#
 # Past entries are hidden by default (toggle on the page) — no need to delete them.
 # -----------------------------------------------------------------------------
 
@@ -51,6 +59,7 @@
 
 - name: ICRA 2027
   full_name: IEEE International Conference on Robotics and Automation
+  attendance: ~7000
   deadline: "2026-09-15T23:59:00-07:00"
   deadline_label: Paper submission
   status: confirmed
@@ -82,6 +91,7 @@
 
 - name: IROS 2027
   full_name: IEEE/RSJ International Conference on Intelligent Robots and Systems
+  attendance: ~4000
   deadline: "2027-03-01T23:59:00-08:00"
   deadline_label: Paper submission
   status: confirmed
@@ -102,6 +112,8 @@
 
 - name: RSS 2027
   full_name: "Robotics: Science and Systems"
+  attendance: ~1000
+  single_track: true
   status: tba
   hint: typically abstracts late Jan, papers ~1 week later
   dates: July 6–11, 2027
@@ -180,6 +192,8 @@
 
 - name: NCM 2027
   full_name: Society for the Neural Control of Movement Annual Meeting
+  attendance: ~700
+  single_track: true
   deadline: "2027-02-22T23:59:00-05:00"
   deadline_label: Poster abstract submission
   status: confirmed
@@ -195,6 +209,7 @@
 
 - name: SfN 2027
   full_name: "Society for Neuroscience: Neuroscience 2027"
+  attendance: ~24000
   status: tba
   hint: abstracts typically open late April, close early May
   dates: October 23–27, 2027
@@ -374,3 +389,78 @@
   place: TBA
   url: https://neurips.cc/
   tags: [learning]
+
+# ------------------------------------------- added from the venue-pages review ---
+
+- name: BANCOM
+  full_name: Biomechanics and Neural Control of Movement
+  status: tba
+  hint: roughly quadrennial; attendance is invitation-flavoured
+  dates: Next edition expected ~2028
+  place: USA
+  url: https://www.bancom-conference.org/
+  attendance: ~200
+  single_track: true
+  tags: [motor-control, biomechanics, neuroscience]
+  note: Small, single-track, and unusually high standing in exactly this community.
+
+- name: ISEK
+  full_name: International Society of Electrophysiology and Kinesiology Congress
+  status: tba
+  hint: biennial; abstracts typically due ~January
+  dates: Biennial
+  place: TBA
+  url: https://isek.org/
+  tags: [biomechanics, motor-control]
+  note: The EMG and neuromuscular measurement community.
+
+- name: IEEE NER 2027
+  full_name: IEEE EMBS Conference on Neural Engineering
+  status: tba
+  hint: biennial (odd years); papers typically due ~November–December
+  dates: 2027 edition
+  place: TBA
+  url: https://neuro.embs.org/
+  tags: [rehab, neuroscience, motor-control]
+
+- name: RO-MAN 2027
+  full_name: IEEE International Conference on Robot and Human Interactive Communication
+  status: tba
+  hint: papers typically due ~March
+  dates: Late summer 2027
+  place: TBA
+  url: https://www.ieee-ras.org/conferences-workshops/technically-co-sponsored/ro-man
+  tags: [robotics, human-robot]
+  note: The physical-HRI and variable-impedance crowd.
+
+- name: HFR 2027
+  full_name: International Workshop on Human-Friendly Robotics
+  status: tba
+  hint: extended abstracts typically due ~June–July
+  dates: Autumn 2027
+  place: TBA
+  url: https://www.human-friendly-robotics.org/
+  attendance: ~100
+  single_track: true
+  tags: [robotics, human-robot, switzerland]
+  note: Small single-track workshop; strong overlap with impedance and interaction control.
+
+- name: SSBE Annual Meeting
+  full_name: Swiss Society for Biomedical Engineering
+  status: tba
+  hint: abstracts typically due ~June
+  dates: Annual, usually autumn
+  place: Switzerland
+  url: https://www.ssbe.ch/
+  tags: [rehab, biomechanics, switzerland]
+  note: National visibility alongside Swiss Robotics Day.
+
+- name: Accelerate Conference
+  full_name: Accelerate Conference (Acceleration Consortium)
+  status: tba
+  hint: abstracts typically due ~February
+  dates: Annual
+  place: TBA
+  url: https://acceleration.utoronto.ca/
+  tags: [automation, learning]
+  note: The self-driving-labs meeting. Outside this page's usual scope — included for review.

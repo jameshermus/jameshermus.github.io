@@ -2,22 +2,23 @@
 layout: page
 permalink: /journals/
 title: journals
-description: Journals we publish in, and other rolling-submission venues in human motor control, robotics, and machine-learning.
+description: Journals we keep an eye on related to human motor control, robotics, and control.
 nav: false
 nav_order: 99
-sitemap: false
+hide_description: true
 ---
 
+{%- assign cats = site.data.journal_categories -%}
 {%- assign jrnls = site.data.journals -%}
 {%- assign all_tags = "" | split: "" -%}
 {%- for j in jrnls -%}{%- if j.tags -%}{%- assign all_tags = all_tags | concat: j.tags -%}{%- endif -%}{%- endfor -%}
 {%- assign all_tags = all_tags | uniq | sort -%}
-{%- assign mine = jrnls | where_exp: "j", "j.pubs" | sort: "pubs" | reverse -%}
-{%- assign others = jrnls | where_exp: "j", "j.pubs == nil" -%}
 
 <div class="dl">
 
-<p class="dl-crosslink">Chasing a submission date instead? → <a href="{{ '/deadlines/' | relative_url }}">conference deadlines</a></p>
+<p class="post-description">{{ page.description }}
+  The default view is a short list. Sort by impact factor, publications, or name to see every
+  journal on file. See also the <a href="{{ '/deadlines/' | relative_url }}">conference deadlines</a>.</p>
 
 <div class="dl-controls">
   <input type="search" id="dl-search" class="dl-search" placeholder="Filter by name or topic…" aria-label="Filter journals">
@@ -29,61 +30,59 @@ sitemap: false
   </div>
   <label class="dl-toggle">sort
     <select id="dl-sort">
-      <option value="grouped">where we publish (default)</option>
+      <option value="grouped">by kind of result (default)</option>
+      <option value="pubs">where we have published</option>
       <option value="jif">impact factor</option>
       <option value="name">name</option>
     </select>
   </label>
+  <label class="dl-toggle"><input type="checkbox" id="dl-all"> show every venue in the default view</label>
+  <p class="jr-caveat dl-hide" id="jr-caveat">
+    Impact factor ranks poorly against standing in this field — <em>Journal of Neurophysiology</em> (2.3)
+    is a more selective venue for human motor control than most journals sorted above it.
+  </p>
 </div>
 
 <div class="dl-list" id="dl-journals">
-
-  <h2 class="jr-group" data-group="mine">Where we publish
-    <small>Journals with a paper of mine in them, most frequent first.</small></h2>
-  {%- for j in mine %}{%- assign jtags = j.tags | join: ' ' -%}
-  <div class="jr-item" data-group="mine" data-idx="{{ forloop.index }}" data-pubs="{{ j.pubs }}" data-jif="{{ j.jif | default: -1 }}" data-name="{{ j.name | downcase | escape }}" data-tags="{{ jtags }}" data-search="{{ j.name | append: ' ' | append: j.note | append: ' ' | append: jtags | downcase | escape }}">
+{%- for c in cats %}
+{%- assign group = jrnls | where: "category", c.key %}
+{%- if group.size > 0 %}
+  <div class="jr-group" data-group="{{ c.key }}"{% if c.hidden %} data-hidden="1"{% endif %}>
+    <h2>{{ c.title }}</h2>
+    <p>{{ c.what }}</p>
+  </div>
+  {%- for j in group %}{%- assign jtags = j.tags | join: ' ' -%}
+  <div class="jr-item" data-group="{{ c.key }}"{% if c.hidden %} data-hidden="1"{% endif %} data-idx="{{ forloop.index }}" data-pubs="{{ j.pubs | default: 0 }}" data-jif="{{ j.jif | default: -1 }}" data-name="{{ j.name | downcase | escape }}" data-tags="{{ jtags }}" data-search="{{ j.name | append: ' ' | append: j.note | append: ' ' | append: jtags | downcase | escape }}">
     <div class="jr-head">
       <span class="jr-name"><a href="{{ j.url }}">{{ j.name }}</a></span>
-      <span class="jr-pubs">{{ j.pubs }} {% if j.pubs == 1 %}paper{% else %}papers{% endif %}</span>
+      {%- if j.pubs %}<span class="jr-pubs">{{ j.pubs }} {% if j.pubs == 1 %}paper{% else %}papers{% endif %} here</span>{%- endif %}
     </div>
     {%- if j.note %}<div class="dl-note">{{ j.note }}</div>{%- endif %}
     <div class="dl-tags">
       {%- for t in j.tags %}<span class="dl-tag">{{ t | replace: '-', ' ' }}</span>{% endfor -%}
-      {%- if j.jif %}<span class="dl-tag jr-jif">JIF {{ j.jif }} · {{ j.jif_year }}</span>
-      {%- else %}<span class="dl-tag jr-jif jr-jif-none">JIF {{ j.jif_note | default: "n/a" }}</span>{%- endif %}
+      {%- if j.jif %}<span class="dl-tag jr-meta">JIF {{ j.jif }} · {{ j.jif_year }}</span>
+      {%- elsif j.jif_note %}<span class="dl-tag jr-meta jr-meta-none">JIF {{ j.jif_note }}</span>
+      {%- else %}<span class="dl-tag jr-meta jr-meta-none">not in JCR</span>{%- endif -%}
+      {%- if j.submission and j.submission != "rolling" %}<span class="dl-tag jr-meta">{{ j.submission }}</span>{% endif -%}
+      {%- if j.apc %}<span class="dl-tag jr-meta">APC {{ j.apc }}</span>{% endif -%}
+      {%- if j.decision_time %}<span class="dl-tag jr-meta">{{ j.decision_time }} to decision</span>{% endif -%}
     </div>
   </div>
   {%- endfor %}
-
-  <h2 class="jr-group" data-group="other">Other venues in the field
-    <small>Where the work I follow tends to appear. Listed by area, not ranked.</small></h2>
-  {%- for j in others %}{%- assign jtags = j.tags | join: ' ' -%}
-  <div class="jr-item" data-group="other" data-idx="{{ forloop.index }}" data-pubs="0" data-jif="{{ j.jif | default: -1 }}" data-name="{{ j.name | downcase | escape }}" data-tags="{{ jtags }}" data-search="{{ j.name | append: ' ' | append: j.note | append: ' ' | append: jtags | downcase | escape }}">
-    <div class="jr-head">
-      <span class="jr-name"><a href="{{ j.url }}">{{ j.name }}</a></span>
-    </div>
-    {%- if j.note %}<div class="dl-note">{{ j.note }}</div>{%- endif %}
-    <div class="dl-tags">
-      {%- for t in j.tags %}<span class="dl-tag">{{ t | replace: '-', ' ' }}</span>{% endfor -%}
-      {%- if j.jif %}<span class="dl-tag jr-jif">JIF {{ j.jif }} · {{ j.jif_year }}</span>
-      {%- else %}<span class="dl-tag jr-jif jr-jif-none">JIF {{ j.jif_note | default: "n/a" }}</span>{%- endif %}
-    </div>
-  </div>
-  {%- endfor %}
-
+{%- endif %}
+{%- endfor %}
 </div>
 <p class="dl-empty" id="dl-journals-empty" hidden>Nothing matches those filters.</p>
 
 <hr>
 <p class="dl-fineprint">
-  Paper counts come from <a href="{{ '/publications/' | relative_url }}">my publication list</a>.
-  JIF is the Clarivate Journal Impact Factor from the JCR 2025 release (published June 2026) via
-  <a href="https://ooir.org/">ooir.org</a>, unless the chip says another year. It sits with the topic tags
-  on purpose: it is a crude, field-dependent number and a poor guide to where a paper belongs —
-  <em>Journal of Neurophysiology</em> sits near 2 and is still a first-choice venue for human motor control.
-  Sort by it if it is useful, but the default order is about fit, not ranking.
-  The list lives in
+  Impact factors are from the 2025 JCR release via <a href="https://ooir.org/">ooir.org</a>.
+  Paper counts come from the <a href="{{ '/publications/' | relative_url }}">publication list</a>.
+  Missing something?
+  <a href="mailto:{{ site.email | encode_email }}?subject=Journals%20page">Let us know</a> or open a
+  pull request on
   <a href="https://github.com/jameshermus/jameshermus.github.io/blob/source/_data/journals.yml">_data/journals.yml</a>.
+  Last updated {{ site.time | date: "%B %-d, %Y" }}.
 </p>
 
 </div>
@@ -97,32 +96,30 @@ sitemap: false
   var heads = Array.prototype.slice.call(root.querySelectorAll(".jr-group"));
   var search = document.getElementById("dl-search");
   var sortBy = document.getElementById("dl-sort");
+  var showAll = document.getElementById("dl-all");
+  var caveat = document.getElementById("jr-caveat");
   var active = [];
 
   function num(el, k) { return parseFloat(el.dataset[k]); }
 
   function order() {
-    var mode = sortBy.value, seq;
+    var mode = sortBy.value, seq = [];
     if (mode === "grouped") {
-      // headings shown; my journals by paper count, then the rest in file order
-      seq = [];
       heads.forEach(function (h) {
         seq.push(h);
         items.filter(function (el) { return el.dataset.group === h.dataset.group; })
-             .sort(function (a, b) {
-               if (h.dataset.group === "other") return num(a, "idx") - num(b, "idx");
-               return (num(b, "pubs") - num(a, "pubs")) || (num(b, "jif") - num(a, "jif"));
-             })
+             .sort(function (a, b) { return num(a, "idx") - num(b, "idx"); })
              .forEach(function (el) { seq.push(el); });
       });
     } else {
       seq = items.slice().sort(function (a, b) {
         if (mode === "name") return a.dataset.name.localeCompare(b.dataset.name);
+        if (mode === "pubs") return (num(b, "pubs") - num(a, "pubs")) || (num(b, "jif") - num(a, "jif"));
         return num(b, "jif") - num(a, "jif");
       });
     }
     seq.forEach(function (el) { root.appendChild(el); });
-    heads.forEach(function (h) { h.classList.toggle("dl-hide", mode !== "grouped"); });
+    caveat.classList.toggle("dl-hide", mode !== "jif");
   }
 
   function apply() {
@@ -130,14 +127,14 @@ sitemap: false
     items.forEach(function (el) {
       var tags = (el.dataset.tags || "").split(" ");
       var ok = (!active.length || active.some(function (t) { return tags.indexOf(t) !== -1; })) &&
-               (!q || (el.dataset.search || "").indexOf(q) !== -1);
+               (!q || (el.dataset.search || "").indexOf(q) !== -1) &&
+               (showAll.checked || sortBy.value !== "grouped" || !el.dataset.hidden);
       el.classList.toggle("dl-hide", !ok);
       if (ok) { shown++; live[el.dataset.group] = true; }
     });
-    // hide a heading whose whole group got filtered away
-    if (sortBy.value === "grouped") {
-      heads.forEach(function (h) { h.classList.toggle("dl-hide", !live[h.dataset.group]); });
-    }
+    heads.forEach(function (h) {
+      h.classList.toggle("dl-hide", sortBy.value !== "grouped" || !live[h.dataset.group]);
+    });
     document.getElementById("dl-journals-empty").hidden = shown > 0;
   }
 
@@ -156,6 +153,7 @@ sitemap: false
     apply();
   });
   search.addEventListener("input", apply);
+  showAll.addEventListener("change", apply);
   sortBy.addEventListener("change", function () { order(); apply(); });
 
   order();
