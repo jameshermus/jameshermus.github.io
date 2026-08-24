@@ -30,24 +30,47 @@
   - firstname: ["Darryl G.", "Darryl", "D. G.", "D."]
     url: https://engineering.wisc.edu/directory/profile/darryl-thelen
 
-# Coauthors appearing in papers.bib without a link yet. Add a url when you
-# have one; delete the name if you would rather leave it unlinked.
+"Tessari":
+  - firstname: ["Federico", "F."]
+    url: https://meche.mit.edu/people/staff/ftessari@mit.edu
+
+"West":
+  - firstname: ["A. Michael", "Michael", "A. M."]
+    url: https://meche.mit.edu/people/staff/amwest@mit.edu
+
+"Brandon":
+  - firstname: ["Scott C. E.", "Scott", "S. C. E."]
+    url: https://www.uoguelph.ca/engineering/people/scott-brandon
+
+"Maurice":
+  - firstname: ["Pauline", "P."]
+    url: https://members.loria.fr/PMaurice/
+
+# ---------------------------------------------------------------------------
+# CANDIDATES — url found but NOT content-verified from here. Several of these
+# hosts return 403 to a script while working fine in a browser; others I could
+# not locate a stable page for at all. Open each one, then move it above and
+# uncomment. Do not enable one you have not looked at.
 #
-#   Akolkar, Himanshu          Keuler, Emily M.
-#   Allen, Matthew S.          Kheddar, Abderrahmane
-#   Bombile, Michael           Khurana, Harshit
-#   Brandon, Scott C. E.       Lachner, Johannes
-#   de Looijer, Stijn          Lacoursiere, Claude
-#   Doeringer, Joseph          Martin, Jack A.
-#   Ehlers, Alexander C.       Maurice, Pauline
-#   Enns, Gabrielle            Melone, Alessandro
-#   Gautier, Maxime            Naceri, Abdeldjallil
-#   Geurts, Mark               Saccon, Alessandro
+# "Huber":
+#   - firstname: ["Meghan", "M."]
+#     url: https://www.umass.edu/robotics/people/meghan-huber      # 403 to curl
+#
+# "Saccon":  # position 13 of 14 on the RAM paper — outside max_author_limit
+#   - firstname: ["Alessandro", "A."]
+#     url: https://www.tue.nl/en/research/researchers/alessandro-saccon
+#
+# "Kheddar":
+#   - firstname: ["Abderrahmane", "A."]
+#     url: https://sites.google.com/site/kheddarabderrahmane/       # thin page
+#
+# Still to find a page for:
+#   Allen, Matthew S.          Naceri, Abdeldjallil
 #   Haddadin, Sami             Schwartz, Andrew B.
-#   Huber, Meghan              Segalman, Daniel J.
-#   Jeandupeux, Elise          Smilowitz, Jennifer
-#   Sugimoto-Dimitrova, Rika   Szczykutowicz, Timothy P.
-#   Tessari, Federico          Troebinger, Mario
-#   van Steen, Jari J.         Verdi, David
-#   West, A. Michael           Zermane, Ahmed
-#   Zhang, Chenguang
+#   Lachner, Johannes          Sugimoto-Dimitrova, Rika
+#   Martin, Jack A.            Szczykutowicz, Timothy P.
+#
+# Note on which links actually render: an author outside max_author_limit
+# (_config.yml, currently 10) sits inside the "N more authors" toggle and gets
+# no link. Szczykutowicz, Schwartz, Haddadin, Kheddar, Naceri and Saccon are
+# deep in the author list on their papers, so entries for them may never show.
