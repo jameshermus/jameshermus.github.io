@@ -1,34 +1,47 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# Coauthor links shown on /publications/.
+#
+# Keyed by LAST name; `firstname` must list every form that appears in
+# papers.bib (jekyll-scholar matches on the exact string), so include
+# initials as well as the full given name.
+#
+# Only add an entry once you have checked the URL — a wrong link is worse
+# than no link. Coauthors without an entry simply render as plain text,
+# which is a fine default.
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Hogan":
+  - firstname: ["Neville", "N."]
+    url: https://meche.mit.edu/people/faculty/neville@mit.edu
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Billard":
+  - firstname: ["Aude", "A."]
+    url: https://people.epfl.ch/aude.billard
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Sternad":
+  - firstname: ["Dagmar", "D."]
+    url: https://cos.northeastern.edu/people/dagmar-sternad/
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Thelen":
+  - firstname: ["Darryl G.", "Darryl", "D. G.", "D."]
+    url: https://directory.engr.wisc.edu/me/faculty/thelen_darryl
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
-
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
-
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
-
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+# Coauthors appearing in papers.bib without a link yet. Add a url when you
+# have one; delete the name if you would rather leave it unlinked.
+#
+#   Akolkar, Himanshu          Keuler, Emily M.
+#   Allen, Matthew S.          Kheddar, Abderrahmane
+#   Bombile, Michael           Khurana, Harshit
+#   Brandon, Scott C. E.       Lachner, Johannes
+#   de Looijer, Stijn          Lacoursiere, Claude
+#   Doeringer, Joseph          Martin, Jack A.
+#   Ehlers, Alexander C.       Maurice, Pauline
+#   Enns, Gabrielle            Melone, Alessandro
+#   Gautier, Maxime            Naceri, Abdeldjallil
+#   Geurts, Mark               Saccon, Alessandro
+#   Haddadin, Sami             Schwartz, Andrew B.
+#   Huber, Meghan              Segalman, Daniel J.
+#   Jeandupeux, Elise          Smilowitz, Jennifer
+#   Sugimoto-Dimitrova, Rika   Szczykutowicz, Timothy P.
+#   Tessari, Federico          Troebinger, Mario
+#   van Steen, Jari J.         Verdi, David
+#   West, A. Michael           Zermane, Ahmed
+#   Zhang, Chenguang

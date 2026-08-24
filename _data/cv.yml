@@ -43,52 +43,15 @@
       description:
         - Lab Director: Neville Hogan, Ph.D.
         - Research Topics: Motor Neuroscience, Physical Interaction, Kinematically Redundant Robotics
-    - title: Undergraduate Research Assistant
-      institution: Massachusetts Institute of Technology
-      year: Fall 2022
-      description:
-        - Taught recitations for 2.151 -- Advanced System Dynamics and Control
-        - Continued collaborations with Univesity of Pittsburg 
-        - Completed papers from PhD work
-    - title: Undergraduate Research Assistant
-      institution: Massachusetts Institute of Technology
-      year: Fall 2022
-      description:
-        - Taught recitations for 2.151 -- Advanced System Dynamics and Control
-        - Continued collaborations with Univesity of Pittsburg 
-        - Completed papers from PhD work
 
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+# TODO (James): these sections were al-folio placeholders (Einstein's Nobel
+# Prize, "Topic 1", "Hobby 1") and have been removed. Add your own when you
+# want them:
+#   - title: Honors and Awards
+#   - title: Academic Interests
+#   - title: Other Interests
+#
+# Note: _layouts/cv.html currently has the loop over this file commented out
+# and shows the PDF instead, so nothing here is displayed. The commented
+# block is still processed by Liquid, so its text does land in the page
+# source even though browsers do not render it.

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: BME Design
-description: a project with a background image
+description: Mechanical design coursework project — a compliant mechanism developed for BME Design.
 img: assets/img/projects/work/BME_Design/CADView1.png
 importance: 4
 category: hide
@@ -16,7 +16,7 @@ To give your project a background in the portfolio page, just add the img tag to
     ---
     layout: page
     title: project
-    description: a project with a background image
+    description: Mechanical design coursework project — a compliant mechanism developed for BME Design.
     img: /assets/img/12.jpg
     ---
 
@@ -35,5 +35,5 @@ To give your project a background in the portfolio page, just add the img tag to
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    
 </div>
