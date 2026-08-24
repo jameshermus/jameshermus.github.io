@@ -28,7 +28,7 @@
     {% include scripts/bootstrap.html %}
     {% include scripts/masonry.html %}
     {% include scripts/misc.html %}
-    {% include scripts/badges.html %}
+    {% if page.url contains "/publications" or page.selected_papers %}{% include scripts/badges.html %}{% endif %}
     {% include scripts/mathjax.html %}
     {% include scripts/analytics.html %}
     {% include scripts/progressBar.html %}

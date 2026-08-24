@@ -6,8 +6,8 @@
 # "I have this kind of result — where does it go?"  Entries are grouped by KIND
 # OF RESULT, not by field.
 #
-# HARD RULE: 2-4 journals per category. If a category needs a fifth, the
-# category is too broad — split it. A short list is the point.
+# Keep each category a curated short list. If one grows long enough to stop
+# being a short list, that is a sign the category is too broad — split it.
 #
 #   - name: IEEE Transactions on Robotics (T-RO)
 #     url: https://...

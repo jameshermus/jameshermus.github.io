@@ -26,7 +26,7 @@ The student will be based at the [Idiap Research Institute](https://www.idiap.ch
 
 
 <p align="center">
-  <img src="{{ '/assets/img/AmbizioneFig.png' | relative_url }}" alt="Overview of Ambizione project: human motor control and robotic manipulation" width="80%">
+  <img src="{{ '/assets/img/AmbizioneFig.png' | relative_url }}" alt="Overview of Ambizione project: human motor control and robotic manipulation" class="img-fluid" style="max-width:80%">
 </p>
 <p align="center"><em>Overview of the SNSF Ambizione project on human motor control and robotic manipulation.</em></p>
 
