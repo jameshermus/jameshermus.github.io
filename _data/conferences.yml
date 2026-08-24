@@ -145,7 +145,7 @@
   hint: typically late November / early December
   dates: Spring 2027
   place: TBA
-  url: https://www.ieee-ras.org/conferences-workshops/technically-co-sponsored/robosoft
+  url:   # dead as of 2026-08-24 (IEEE RAS path 404s); was https://www.ieee-ras.org/conferences-workshops/technically-co-sponsored/robosoft
   tags: [robotics]
 
 - name: ISRR
@@ -398,7 +398,7 @@
   hint: roughly quadrennial; attendance is invitation-flavoured
   dates: Next edition expected ~2028
   place: USA
-  url: https://www.bancom-conference.org/
+  url:   # dead as of 2026-08-24 (domain no longer resolves); was https://www.bancom-conference.org/
   attendance: ~200
   single_track: true
   tags: [motor-control, biomechanics, neuroscience]
@@ -429,7 +429,7 @@
   hint: papers typically due ~March
   dates: Late summer 2027
   place: TBA
-  url: https://www.ieee-ras.org/conferences-workshops/technically-co-sponsored/ro-man
+  url:   # dead as of 2026-08-24 (IEEE RAS path 404s); was https://www.ieee-ras.org/conferences-workshops/technically-co-sponsored/ro-man
   tags: [robotics, human-robot]
   note: The physical-HRI and variable-impedance crowd.
 
@@ -439,7 +439,7 @@
   hint: extended abstracts typically due ~June–July
   dates: Autumn 2027
   place: TBA
-  url: https://www.human-friendly-robotics.org/
+  url:   # dead as of 2026-08-24 (domain no longer resolves); was https://www.human-friendly-robotics.org/
   attendance: ~100
   single_track: true
   tags: [robotics, human-robot, switzerland]

@@ -12,7 +12,7 @@ category: work
 </div>
 
 <div>
-Today inverse dynamics and EMG scaling are used to approximate the forces with in muscles and tendons however this approach cannot account for co-contraction.  We have developed a method for measuring tendon stress noninvasivly.  As shear wave speed is logarithmically related to the tendon stress, measuring the shear wave at two points to get phasing, the wave speed can be determined.  In practice this is done using a piezo actuator to induce the shear wave and a ultra sound probe or two accelerometers to measure the shear wave.
+Today inverse dynamics and EMG scaling are used to approximate the forces within muscles and tendons however this approach cannot account for co-contraction.  We have developed a method for measuring tendon stress noninvasively.  As shear wave speed is logarithmically related to the tendon stress, measuring the shear wave at two points to get phasing, the wave speed can be determined.  In practice this is done using a piezo actuator to induce the shear wave and an ultrasound probe or two accelerometers to measure the shear wave.
 </div>
 
 <div class="row">
@@ -49,7 +49,7 @@ This picture displays our various design stages using piezo actuators and an ult
 </div>
 
 <div>
-In order to determine cartilage contact 3D static images are acquired and segmented, these static images can then be tracked on lower resolution dynamic images taken while preforming a dynamic task during MRI.  
+In order to determine cartilage contact 3D static images are acquired and segmented, these static images can then be tracked on lower resolution dynamic images taken while performing a dynamic task during MRI.  
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0-center">

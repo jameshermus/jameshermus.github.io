@@ -38,7 +38,7 @@ hide_description: true
     <div class="dl-when"><span class="dl-count">{{ c.deadline | date: "%b %-d" }}</span></div>
     <div class="dl-what">
       <div class="dl-title">
-        <a href="{{ c.url }}">{{ c.name }}</a>
+        {% if c.url %}<a href="{{ c.url }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}
         {%- if c.status != "confirmed" %} <span class="dl-flag" title="Date not confirmed against the official site">~ unconfirmed</span>{%- endif %}
       </div>
       {%- if c.full_name %}<div class="dl-full">{{ c.full_name }}</div>{%- endif %}
@@ -68,7 +68,7 @@ hide_description: true
   <div class="dl-item dl-item-tba" data-tags="{{ ctags }}" data-search="{{ c.name | append: ' ' | append: c.full_name | append: ' ' | append: c.place | append: ' ' | append: c.dates | append: ' ' | append: c.note | append: ' ' | append: ctags | downcase | escape }}">
     <div class="dl-when"><span class="dl-count dl-count-tba">TBA</span></div>
     <div class="dl-what">
-      <div class="dl-title"><a href="{{ c.url }}">{{ c.name }}</a></div>
+      <div class="dl-title">{% if c.url %}<a href="{{ c.url }}">{{ c.name }}</a>{% else %}{{ c.name }}{% endif %}</div>
       {%- if c.full_name %}<div class="dl-full">{{ c.full_name }}</div>{%- endif %}
       {%- if c.hint %}<div class="dl-meta"><strong>Submission:</strong> not announced — {{ c.hint }}</div>{%- endif %}
       <div class="dl-meta">{% if c.dates %}{{ c.dates }}{% endif %}{% if c.place %} · {{ c.place }}{% endif %}</div>
