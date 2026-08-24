@@ -180,10 +180,23 @@
           {%- if entry.website %}
             <a href="{{ entry.website }}" class="btn btn-sm z-depth-0" role="button">Website</a>
           {%- endif %}
-          {%- if entry.altmetric %}
-            <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div data-altmetric-id="{{ entry.altmetric }}" class="altmetric-embed" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-popover="right" data-badge-type="2" style="display:inline"></div>
-          {%- endif %}
           </div>
+
+          {%- if site.enable_publication_badges %}
+          {%- assign doi = entry.doi | remove: 'https://doi.org/' | remove: 'http://dx.doi.org/' | remove: 'https://dx.doi.org/' | remove: 'doi:' | strip %}
+          {%- if entry.altmetric or doi != '' %}
+          <div class="badges">
+            {%- if entry.altmetric and entry.altmetric != 'true' %}
+            <span class="altmetric-embed" data-altmetric-id="{{ entry.altmetric }}" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            {%- elsif doi != '' %}
+            <span class="altmetric-embed" data-doi="{{ doi }}" data-hide-no-mentions="true" data-hide-less-than="15" data-badge-type="2" data-badge-popover="right"></span>
+            {%- endif %}
+            {%- if doi != '' %}
+            <span class="__dimensions_badge_embed__" data-doi="{{ doi }}" data-hide-zero-citations="true" data-style="small_rectangle" data-legend="hover-right"></span>
+            {%- endif %}
+          </div>
+          {%- endif %}
+          {%- endif %}
 
           {% if entry.abstract -%}
           <!-- Hidden abstract block -->

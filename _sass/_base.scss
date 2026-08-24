@@ -717,3 +717,11 @@ progress {
      display: block;
      height: inherit;
  }
+
+.badges {
+  margin-top: 0.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
