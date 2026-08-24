@@ -1,12 +1,18 @@
 ---
 layout: page
 permalink: /positions/
-title: New PhD Position
-description: PhD in human motor control and contact-rich robotic manipulation at Idiap (EPFL doctoral program), funded by SNSF Ambizione. Start Sept 2026.
+title: PhD Position (filled)
+description: A record of the SNSF Ambizione PhD position at Idiap, filled for a September 2026 start.
 hide_description: true
-nav: True
+nav: false
 nav_order: 7
-published: False
+published: true
+---
+
+> **This position has been filled**, for a September 2026 start. The
+> description below is kept as a record of the search. Future openings will be
+> announced here and on the [news feed]({{ '/' | relative_url }}).
+
 ---
 
 **Supervisors:** James Hermus, PhD (Idiap/EPFL); Sylvain Calinon, PhD (Idiap); and Prof. Auke Ijspeert (EPFL)  
@@ -64,41 +70,3 @@ If you are a current Master’s student interested in a **semester project**, **
 Two master's level projects on related topics are now available on the [Idiap Student Projects Page](https://www.epfl.ch/labs/idiap/student-projects/).
 
 We especially welcome students who are **interested in continuing to a PhD** after a successful Master’s or visiting project.
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  "title": "PhD Student — Human Motor Control & Robotic Manipulation",
-  "description": "PhD in human motor control and contact-rich robotic manipulation at Idiap (EPFL doctoral program), funded by SNSF Ambizione. Start Sept 2026.",
-  "hiringOrganization": [
-    {
-      "@type": "Organization",
-      "name": "Idiap Research Institute",
-      "sameAs": "https://www.idiap.ch"
-    },
-    {
-      "@type": "Organization",
-      "name": "École Polytechnique Fédérale de Lausanne (EPFL)",
-      "sameAs": "https://www.epfl.ch"
-    }
-  ],
-  "jobLocation": {
-    "@type": "Place",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Martigny",
-      "addressCountry": "CH"
-    }
-  },
-  "applicantLocationRequirements": {
-    "@type": "Country",
-    "name": "Switzerland"
-  },
-  "educationRequirements": "Master's degree in robotics, mechanical/electrical engineering, computer science, or related field",
-  "employmentType": "FULL_TIME",
-  "datePosted": "2025-10-29",
-  "validThrough": "2026-12-31",
-  "directApply": true
-}
-</script>
