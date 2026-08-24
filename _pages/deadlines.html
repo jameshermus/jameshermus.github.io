@@ -24,7 +24,7 @@ hide_description: true
   <input type="search" id="dl-search" class="dl-search" placeholder="Filter by name, place, or topic…" aria-label="Filter deadlines">
   <div class="dl-chips" id="dl-chips">
     {%- for t in all_tags %}
-    <button type="button" class="dl-chip" data-tag="{{ t }}">{{ t | replace: '-', ' ' }}</button>
+    <button type="button" class="dl-chip" data-tag="{{ t }}" aria-pressed="false">{{ t | replace: '-', ' ' }}</button>
     {%- endfor %}
     <button type="button" class="dl-chip dl-chip-clear" id="dl-clear">clear</button>
   </div>
@@ -45,7 +45,7 @@ hide_description: true
       <div class="dl-meta">
         <strong>{{ c.deadline_label | default: "Submission" }}:</strong>
         {{ c.deadline | date: "%b %-d, %Y, %H:%M" }} <span class="dl-tz">{{ c.deadline | date: "%:z" }}</span>
-        <a class="dl-ics" href="#" title="Download a calendar reminder">＋ical</a>
+        <button type="button" class="dl-ics" title="Download a calendar reminder" aria-label="Add the {{ c.name }} deadline to your calendar">＋ical</button>
         {%- for e in c.extra %}<br><span class="dl-extra">{{ e.label }}: {{ e.date | date: "%b %-d, %Y" }}</span>{%- endfor %}
         {%- if c.notification %}<br><span class="dl-extra">Notification: {{ c.notification | date: "%b %-d, %Y" }}</span>{%- endif %}
       </div>
@@ -60,7 +60,7 @@ hide_description: true
   </div>
 {%- endfor %}
 </div>
-<p class="dl-empty" id="dl-dated-empty" hidden>Nothing matches those filters.</p>
+<p class="dl-empty" id="dl-dated-empty" role="status" aria-live="polite" hidden>Nothing matches those filters.</p>
 
 <h2 class="dl-h">Deadline not yet announced</h2>
 <div class="dl-list" id="dl-undated">
@@ -82,7 +82,7 @@ hide_description: true
   </div>
 {%- endfor %}
 </div>
-<p class="dl-empty" id="dl-undated-empty" hidden>Nothing matches those filters.</p>
+<p class="dl-empty" id="dl-undated-empty" role="status" aria-live="polite" hidden>Nothing matches those filters.</p>
 
 <hr>
 <p class="dl-fineprint">
@@ -184,14 +184,14 @@ hide_description: true
   Array.prototype.forEach.call(document.querySelectorAll(".dl-chip[data-tag]"), function (chip) {
     chip.addEventListener("click", function () {
       var t = chip.dataset.tag, i = active.indexOf(t);
-      if (i === -1) { active.push(t); chip.classList.add("active"); }
-      else { active.splice(i, 1); chip.classList.remove("active"); }
+      if (i === -1) { active.push(t); chip.classList.add("active"); chip.setAttribute("aria-pressed", "true"); }
+      else { active.splice(i, 1); chip.classList.remove("active"); chip.setAttribute("aria-pressed", "false"); }
       apply();
     });
   });
   document.getElementById("dl-clear").addEventListener("click", function () {
     active = [];
-    Array.prototype.forEach.call(document.querySelectorAll(".dl-chip[data-tag]"), function (c) { c.classList.remove("active"); });
+    Array.prototype.forEach.call(document.querySelectorAll(".dl-chip[data-tag]"), function (c) { c.classList.remove("active"); c.setAttribute("aria-pressed", "false"); });
     search.value = "";
     apply();
   });

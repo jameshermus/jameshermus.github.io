@@ -11,10 +11,6 @@ profile:
   align: right
   image: headshot2.jpg
   image_circular: true # crops the image to make it circular
-  address: >
-    <p>Idiap Research Institute</p>
-    <p>Centre du Parc, Rue Marconi 19</p>
-    <p>CH-1920 Martigny, Switzerland</p>
 
 news: true  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
