@@ -10,7 +10,8 @@
 .dl-search { width: 100%; padding: .45rem .7rem; font-size: .95rem; border-radius: 4px;
              border: 1px solid var(--global-divider-color); background: var(--global-bg-color);
              color: var(--global-text-color); }
-.dl-search:focus { outline: none; border-color: var(--global-theme-color); }
+.dl-search:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 2px; border-color: var(--global-theme-color); }
+.dl-chip:focus-visible, .dl-ics:focus-visible { outline: 2px solid var(--global-theme-color); outline-offset: 2px; }
 .dl-chips { margin: .7rem 0 .5rem; display: flex; flex-wrap: wrap; gap: .35rem; }
 .dl-chip { font-size: .78rem; padding: .12rem .55rem; border-radius: 999px; cursor: pointer;
            border: 1px solid var(--global-divider-color); background: transparent;
