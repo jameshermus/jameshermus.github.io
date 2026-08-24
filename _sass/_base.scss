@@ -725,14 +725,26 @@ progress {
 .publications ol.bibliography li .badges {
   padding-bottom: 0.5rem;
   margin-top: 0.3rem;
+  // Flex centring, rather than vertical-align, because the Altmetric donut and
+  // the Dimensions rectangle are different heights and each vendor sets its own
+  // internal alignment.
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 0.5rem;
+  row-gap: 0.25rem;
 }
+// Force black text: these badges are inline DOM, not iframes, so the site's own
+// colours would otherwise cascade in and wash out the hover legend.
 .publications ol.bibliography li .badges span {
-  display: inline-block;
   color: #000;
-  height: 100%;
-  padding-right: 0.5rem;
-  vertical-align: middle;
 }
-.publications ol.bibliography li .badges span:hover {
-  text-decoration: underline;
+.publications ol.bibliography li .badges > span {
+  display: inline-flex;
+  align-items: center;
+}
+.publications ol.bibliography li .badges > span > a,
+.publications ol.bibliography li .badges > span > div {
+  display: inline-flex;
+  align-items: center;
 }
