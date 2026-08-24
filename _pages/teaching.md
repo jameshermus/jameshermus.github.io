@@ -1,10 +1,10 @@
 ---
 layout: page
 permalink: /teaching/
-title: teaching
+title: Teaching
 description:
 nav: false
-nav_order: 5
+nav_order: 6
 ---
 
 This fall, I served as a 50% Lecturer for 2.151: Advanced System Dynamics and Control. I hope too share some of the teaching materials on this page in the not so distant future. 
