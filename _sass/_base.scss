@@ -23,6 +23,13 @@ table {
 
 a, table.table a {
   color: var(--global-theme-color);
+  // Underline by default, not only on hover. Colour alone is not a reliable
+  // way to mark a link (WCAG 1.4.1) — it fails for colour-blind readers.
+  // Nav items, buttons, badges and cards set text-decoration: none of their
+  // own, so this applies to links in prose, which is where it matters.
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 0.06em;
   &:hover {
     color: var(--global-theme-color);
     text-decoration: underline;
@@ -30,6 +37,27 @@ a, table.table a {
   &:hover:after :not(.nav-item.dropdown) {
     width: 100%;
   }
+}
+
+// Chrome links carry their own affordances (position, icon, button shape), so
+// they do not need the underline the prose links get above.
+.navbar a,
+footer a,
+.social a,
+.contact-icons a,
+.btn,
+.publications ol.bibliography li .abbr abbr a,
+.post .post-tags a,
+.projects a,
+.card a,
+.dl-ics,
+.dl-chip {
+  text-decoration: none;
+}
+
+// A link wrapping only an image would otherwise show a stray underline.
+a:has(> img) {
+  text-decoration: none;
 }
 
 figure, img {
