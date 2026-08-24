@@ -36,15 +36,31 @@
 
 "West":
   - firstname: ["A. Michael", "Michael", "A. M."]
-    url: https://meche.mit.edu/people/staff/amwest@mit.edu
-
-"Brandon":
-  - firstname: ["Scott C. E.", "Scott", "S. C. E."]
-    url: https://www.uoguelph.ca/engineering/people/scott-brandon
+    url: https://malonecenter.jhu.edu/people/a-michael-west-jr/
 
 "Maurice":
   - firstname: ["Pauline", "P."]
     url: https://members.loria.fr/PMaurice/
+
+"Huber":
+  - firstname: ["Meghan", "M."]
+    url: https://www.umass.edu/robotics/people/meghan-huber
+
+"Schwartz":
+  - firstname: ["Andrew B.", "Andrew", "A. B."]
+    url: https://motorlab.pitt.edu/schwartz.php
+
+"Allen":
+  - firstname: ["Matthew S.", "Matthew", "M. S."]
+    url: https://www.me.byu.edu/directory/matt-allen
+
+"Lachner":
+  - firstname: ["Johannes", "J."]
+    url: https://jlachner.github.io/
+
+"Szczykutowicz":
+  - firstname: ["Timothy P.", "Timothy P", "Timothy", "T. P."]
+    url: https://medphysics.wisc.edu/blog/staff/szczykutowicz-timothy-p/
 
 # ---------------------------------------------------------------------------
 # CANDIDATES — url found but NOT content-verified from here. Several of these
@@ -52,9 +68,6 @@
 # not locate a stable page for at all. Open each one, then move it above and
 # uncomment. Do not enable one you have not looked at.
 #
-# "Huber":
-#   - firstname: ["Meghan", "M."]
-#     url: https://www.umass.edu/robotics/people/meghan-huber      # 403 to curl
 #
 # "Saccon":  # position 13 of 14 on the RAM paper — outside max_author_limit
 #   - firstname: ["Alessandro", "A."]
@@ -67,8 +80,8 @@
 # Still to find a page for:
 #   Allen, Matthew S.          Naceri, Abdeldjallil
 #   Haddadin, Sami             Schwartz, Andrew B.
-#   Lachner, Johannes          Sugimoto-Dimitrova, Rika
-#   Martin, Jack A.            Szczykutowicz, Timothy P.
+#             Sugimoto-Dimitrova, Rika
+#   Martin, Jack A.     
 #
 # Note on which links actually render: an author outside max_author_limit
 # (_config.yml, currently 10) sits inside the "N more authors" toggle and gets
