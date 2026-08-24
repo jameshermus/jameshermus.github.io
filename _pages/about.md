@@ -2,7 +2,9 @@
 layout: about
 title: About
 permalink: /
-bin/deploy --user: #<a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle: >
+  SNSF Ambizione Fellow · Research Associate,
+  <a href="https://www.idiap.ch">Idiap Research Institute</a> · Martigny, Switzerland
 description: James Hermus — researcher in human motor control and robotic manipulation at the Idiap Research Institute (SNSF Ambizione PI, EPFL/Idiap), MIT PhD. His work bridges control theory, biomechanics, and learning to model how humans manage physical interaction.
 
 profile:
