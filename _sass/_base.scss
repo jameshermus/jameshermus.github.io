@@ -718,10 +718,21 @@ progress {
      height: inherit;
  }
 
-.badges {
+// Altmetric + Dimensions badges on publications. These render as inline DOM
+// rather than an iframe, so the site's own colours cascade into them and make
+// the hover legend unreadable. Forcing black text and middle alignment is what
+// upstream al-folio does.
+.publications ol.bibliography li .badges {
+  padding-bottom: 0.5rem;
   margin-top: 0.3rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem;
+}
+.publications ol.bibliography li .badges span {
+  display: inline-block;
+  color: #000;
+  height: 100%;
+  padding-right: 0.5rem;
+  vertical-align: middle;
+}
+.publications ol.bibliography li .badges span:hover {
+  text-decoration: underline;
 }
