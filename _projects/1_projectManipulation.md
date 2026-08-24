@@ -13,10 +13,10 @@ category: work
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/projects/work/manipulation/manipulation_1arm.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="/assets/img/projects/work/manipulation/manipulation_1arm.png" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="/assets/img/projects/work/manipulation/manipulation_2arm.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="/assets/img/projects/work/manipulation/manipulation_2arm.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 
@@ -30,13 +30,7 @@ Abstract: Humans easily bimanually manipulate objects which may induce contact o
 
 <br>
 
-<html>
-  <head>
-    <title>Title of the document</title>
-  </head>
-  <body>
-    <iframe src="/assets/pdf/6.8323_FinalReport.pdf" width="100%" height="500px">
-    </iframe>
-  </body>
-</html>
+<iframe src="/assets/pdf/6.8323_FinalReport.pdf" width="100%" height="500px" title="the project report">
+  <p>Your browser cannot display PDFs inline. <a href="/assets/pdf/6.8323_FinalReport.pdf">Download the project report</a>.</p>
+</iframe>
 

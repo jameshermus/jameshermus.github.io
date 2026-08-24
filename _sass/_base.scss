@@ -737,7 +737,7 @@ progress {
 // Force black text: these badges are inline DOM, not iframes, so the site's own
 // colours would otherwise cascade in and wash out the hover legend.
 .publications ol.bibliography li .badges span {
-  color: #000;
+  color: var(--global-text-color);
 }
 .publications ol.bibliography li .badges > span {
   display: inline-flex;
@@ -747,4 +747,12 @@ progress {
 .publications ol.bibliography li .badges > span > div {
   display: inline-flex;
   align-items: center;
+}
+
+// Vendor embeds (YouTube, PDF objects) hardcode pixel widths, which forces
+// horizontal page scroll on phones.
+iframe,
+object,
+embed {
+  max-width: 100%;
 }

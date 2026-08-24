@@ -17,7 +17,7 @@ Today inverse dynamics and EMG scaling are used to approximate the forces with i
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0-center">
-        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide1.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide1.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -25,7 +25,7 @@ Today inverse dynamics and EMG scaling are used to approximate the forces with i
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0-center">
-        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide2.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide2.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -37,7 +37,7 @@ This picture displays our various design stages using piezo actuators and an ult
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0-center">
-        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide3.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide3.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -53,7 +53,7 @@ In order to determine cartilage contact 3D static images are acquired and segmen
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0-center">
-        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide5.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide5.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -66,7 +66,7 @@ To validate the aforementioned research to determine cartilage contact a phantom
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0-center">
-        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide6.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide6.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -74,7 +74,7 @@ CAD pictures of components.
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0-center">
-        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide7.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide7.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -89,7 +89,7 @@ Another application of distance fields is finding the thickness of cartilage mod
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0-center">
-        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide4.png" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.html path="assets/img/projects/work/UWNMBL/Slide4.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 

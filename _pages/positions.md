@@ -15,7 +15,7 @@ published: False
 
 ---
 
-#### About the project
+## About the project
 
 We are seeking a PhD student to join a new research project on **human motor control and robotic manipulation**, funded by an [SNSF Ambizione grant](https://www.idiap.ch/en/allnews/idiap-researcher-awarded-snsf-ambizione-grant-to-advance-human-motor-control-and-robotics) led by James Hermus.
 
@@ -32,7 +32,7 @@ The student will be based at the [Idiap Research Institute](https://www.idiap.ch
 
 ---
 
-#### Candidate profile
+## Candidate profile
 
 - Master’s degree in robotics, mechanical/electrical engineering, computer science, or a related field  
 - Strong background in **control systems, robotics, or machine learning**, and solid mathematical foundations  
@@ -40,13 +40,13 @@ The student will be based at the [Idiap Research Institute](https://www.idiap.ch
 
 ---
 
-#### Environment
+## Environment
 
 The **Idiap Research Institute** is an independent, non-profit research foundation affiliated with EPFL, located in the Swiss Alps. Idiap offers a vibrant international research environment. PhD students are formally registered at **EPFL** one of the leading Institutes of Technology in Europe that offers extremely competitive salaries and research infrastructure.
 
 ---
 
-#### How to apply
+## How to apply
 
 **Step 1 –** Apply to a relevant **EPFL doctoral program** (typically [EDRS – Robotics, Control, and Intelligent Systems](https://www.epfl.ch/education/phd/edrs-robotics-control-and-intelligent-systems/)).  
 See [phd.epfl.ch](https://phd.epfl.ch) for details and deadlines.  
@@ -57,7 +57,7 @@ James also welcomes informal email inquiries about the position.
 
 ---
 
-#### Master’s projects and pathway to PhD
+## Master’s projects and pathway to PhD
 
 If you are a current Master’s student interested in a **semester project**, **Master’s thesis**, or a **visiting/internship project** related to this topic, please contact James Hermus at [james.hermus@idiap.ch](mailto:james.hermus@idiap.ch).
 

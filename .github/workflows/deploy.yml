@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - source
-  pull_request:
-    branches:
-      - source
   workflow_dispatch:
 
 # Allow GITHUB_TOKEN to deploy to GitHub Pages
@@ -48,8 +45,6 @@ jobs:
           path: _site
 
   deploy:
-    # Pull requests build but do not publish
-    if: github.event_name != 'pull_request'
     needs: build
     environment:
       name: github-pages

@@ -81,7 +81,7 @@ Outside of research James enjoys rock climbing, ski touring, and working on proj
     </div>
 </div>
 
-<h3 class="card-title font-weight-medium">Research Interests</h3> <div>
+<h2 class="card-title font-weight-medium">Research Interests</h2> <div>
 <ul>
   <li> Physical interaction -- tasks with substantial force and motion </li>
   <li> Kinematic redundancy </li>
