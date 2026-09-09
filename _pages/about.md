@@ -67,7 +67,7 @@ Outside of research James enjoys rock climbing, ski touring, and working on proj
         </a>
     </div>
     <div class="col-12 col-md-6 mt-3 mt-md-0 text-center">
-        <a href="https://www.idiap.ch/en/allnews/idiap-researcher-awarded-snsf-ambizione-grant-to-advance-human-motor-control-and-robotics" target="_blank">
+        <a href="https://www.idiap.ch/en/news/idiap-researcher-awarded-snsf-ambizione-grant-to-advance-human-motor-control-and-robotics" target="_blank">
             <img src="assets/img/Ambizione.jpg" alt="Idiap news: SNSF Ambizione grant awarded to James Hermus" class="img-fluid rounded z-depth-1" style="max-width: 300px;">
         </a>
     </div>
