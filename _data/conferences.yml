@@ -114,12 +114,19 @@
   full_name: "Robotics: Science and Systems"
   attendance: ~1000
   single_track: true
-  status: tba
-  hint: typically abstracts late Jan, papers ~1 week later
+  deadline: "2026-12-04T23:59:00-12:00"
+  deadline_label: Stage 1 extended abstract
+  status: confirmed
   dates: July 6–11, 2027
   place: Athens, Greece
   url: https://roboticsconference.org/information/cfp/
   tags: [robotics, manipulation, learning]
+  note: >-
+    New for 2027: a two-stage cycle replaces the single deadline. Stage 1 is a
+    semi-complete paper of 5 pages plus 1 of references, with methodology fully
+    worked out but experiments allowed to be preliminary. No supplementary
+    material at Stage 1. Later stage dates are on the call for papers.
+    23:59 AoE.
 
 - name: CoRL
   full_name: Conference on Robot Learning
@@ -237,15 +244,19 @@
 
 # ---------------------------------------------------- biomechanics & rehab ---
 
-- name: RehabWeek 2027
-  full_name: RehabWeek — includes ICORR (IEEE Int. Conf. on Rehabilitation Robotics)
-  status: tba
-  hint: ICORR papers typically due December–January
+- name: ICORR 2027 — RehabWeek
+  full_name: IEEE International Conference on Rehabilitation Robotics, part of RehabWeek 2027
+  deadline: "2026-11-17T23:59:00+01:00"
+  deadline_label: Abstract / paper submission
+  status: confirmed
   dates: May 31 – June 4, 2027
   place: Lausanne, Switzerland
-  url: https://rehabweek.org/icorr/
+  url: https://rehabweek.org/abstract-paper-submission
   tags: [rehab, robotics, biomechanics, switzerland]
-  note: Local — Lausanne.
+  note: >-
+    Local — Lausanne. One shared deadline covers all six RehabWeek
+    sub-conferences (ACRM, ICORR, IFESS, IISART & MiNT, ISVR, MotusAcademy);
+    pick ICORR as your track at submission. Stated as 23:59 CET.
 
 - name: BioRob
   full_name: IEEE RAS/EMBS International Conference on Biomedical Robotics and Biomechatronics
